@@ -32,11 +32,7 @@ function Home({ providers }) {
               <div className="pl-4">
                 <button
                   className="text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5 transition-all hover:border-2"
-                  onClick={() =>
-                    signIn(provider.id, {
-                      callbackUrl: `${VERCEL_URL}/api/auth/callback/google/`,
-                    })
-                  }
+                  onClick={() => signIn(provider.id, { callbackUrl: "/" })}
                 >
                   Sign in
                 </button>
